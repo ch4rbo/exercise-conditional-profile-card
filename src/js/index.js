@@ -37,23 +37,23 @@ function render(variables = {}) {
     lastname = variables.lastname;
   }
   let twitter = "twitty";
-  if (variables.twitty !== null) {
+  if (variables.twitter !== null) {
     twitter = variables.twitter;
   }
 
   let github = "ghub";
-  if (variables.ghub !== null) {
-    github = variables.git;
+  if (variables.github !== null) {
+    github = variables.github;
   }
 
-  let ig = "instagram";
+  let instagram = "instagram";
   if (variables.instagram !== null) {
-    ig = variables.ig;
+    instagram = variables.instagram;
   }
 
-  let linked = "linkedin";
+  let linkedin = "linkedin";
   if (variables.linkedin !== null) {
-    linked = variables.linked;
+    linkedin = variables.linkedin;
   }
 
   let socialMediaPosition = "socialmedia";
@@ -84,10 +84,10 @@ function render(variables = {}) {
           <h2>${role}</h2>
           <h3>${city}, ${country}</h3>
           <ul class="${variables.socialMediaPosition}">
-            <li><a href="https://twitter.com/${variables.twitter}"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://github.com/${variables.github}"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/${variables.linked}"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/${variables.instagram}"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/${twitter}"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://github.com/${github}"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/${linkedin}"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/${instagram}"><i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
